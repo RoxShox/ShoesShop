@@ -15,7 +15,7 @@
   \************************/
 /***/ (function() {
 
-eval("// accordion\r\n\r\nfunction accordion(block, active) {\r\n\tconst itemAccordion = document.querySelectorAll(block);\r\n\r\n\titemAccordion.forEach(item => {\r\n\t\titem.addEventListener('click', function () {\r\n\t\t\tlet parent = item.parentNode;\r\n\t\t\tif (parent.classList.contains(active)) {\r\n\t\t\t\tparent.classList.remove(active);\r\n\t\t\t} else {\r\n\t\t\t\tdocument\r\n\t\t\t\t\t.querySelectorAll(active)\r\n\t\t\t\t\t.forEach(child => child.classList.remove(active));\r\n\t\t\t\tparent.classList.add(active);\r\n\t\t\t}\r\n\t\t});\r\n\t});\r\n}\r\n\r\naccordion('#accordion__item', 'accordion__item--active');\n\n//# sourceURL=webpack://gulp_build/./src/js/main.js?");
+eval("// accordion\r\n\r\nfunction accordion(block, active) {\r\n\tconst itemAccordion = document.querySelectorAll(block);\r\n\r\n\titemAccordion.forEach(item => {\r\n\t\titem.addEventListener('click', function () {\r\n\t\t\tlet parent = item.parentNode;\r\n\t\t\tif (parent.classList.contains(active)) {\r\n\t\t\t\tparent.classList.remove(active);\r\n\t\t\t} else {\r\n\t\t\t\tdocument\r\n\t\t\t\t\t.querySelectorAll(active)\r\n\t\t\t\t\t.forEach(child => child.classList.remove(active));\r\n\t\t\t\tparent.classList.add(active);\r\n\t\t\t}\r\n\t\t});\r\n\t});\r\n}\r\n\r\naccordion('#accordion__item', 'accordion__item--active');\r\n\n\n//# sourceURL=webpack://gulp_build/./src/js/main.js?");
 
 /***/ })
 

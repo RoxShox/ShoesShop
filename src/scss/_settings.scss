@@ -50,7 +50,11 @@ ul {
 	list-style: none;
 	padding: 0;
 }
-
+.container-full{
+	width: 100%;
+	padding: 0px 29px;
+	margin: 0 auto;
+}
 .site-container {
 	position: relative;
 }
@@ -124,7 +128,7 @@ ul {
 .container {
 	padding: 0 20px;
 	margin: 0 auto;
-	max-width: 1352px;
+	max-width: 1445px;
 	width: 100%;
 
 	@include tablet {

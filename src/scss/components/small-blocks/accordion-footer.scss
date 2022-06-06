@@ -1,0 +1,122 @@
+.flow > * + * { 
+    
+}
+
+
+
+.accordion {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	margin-top: 46px;
+	
+}
+
+
+
+/* Accordion Trigger */
+.accordion__item--trigger {
+    cursor: pointer;
+    font-family: 'FrutigerNeue', sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	letter-spacing: 0.005em;
+	color: #FFFFFF;
+	text-align: center;
+    display: flex;
+    align-items: center;
+	justify-content: center;
+	margin-bottom: 24px;
+}
+.accordion__item--catalog{
+    font-weight: 500;
+    font-size: 18px;
+    color: #2F6B78;
+    padding-left: 39px;
+    padding-bottom: 17px;
+    padding-top: 20px;
+    padding-right: 0;
+    margin-right: 0px;
+    border-bottom: 0.5px dashed #E4E4E4;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        // background-image: url(../img/footer-arrow-movbile.svg);
+        width: 17px;
+        height: 10px;
+        background-repeat: no-repeat;
+        left: 115px;
+        top: 49%;
+    }
+    
+}
+
+    .accordion__item--trigger::after {
+        content: '';
+        font-weight: 700;
+        background-image: url(../img/footer-arrow-mobile.svg);
+        width: 12px;
+        height: 7px;
+        background-repeat:no-repeat;
+        display: block;
+        margin-left: 0.75rem;
+    }
+    .accordion__item--trigger[aria-expanded="true"]::after {
+        content: '';
+    }
+
+/* Accordion Panel */
+.accordion__item--panel {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: height 400ms ease-in-out, opacity 350ms linear;
+	justify-content: center;
+    display: flex;
+    align-items: center;
+	text-align: center;
+}
+    .accordion__item--panel > p {
+        margin: 0;
+        padding: 1rem;
+        font-size: 0.85rem;
+    }
+
+.accordion__item--trigger {
+    background: transparent;
+    box-shadow: none;
+}
+.accordion__item--trigger[aria-expanded=true]+.accordion__item--panel {
+    height: auto;
+    opacity: 1;
+    background: transparent;
+    border: none;
+}
+
+
+.mobile__catalog-menu{
+    list-style: none;
+    font-size: 14px;
+    color: #878787;
+    padding-left: 0;
+}
+
+.mobile__catalog-list{
+    border-bottom: 0.5px dashed #E4E4E4;
+    padding-bottom: 14px;
+    
+}
+
+.mobile__catalog .accordion__item--panel{
+display: block;    
+}
+
+.accordion {
+    display: none;
+	@include media-max(1024) {
+		display: block;
+	}
+}

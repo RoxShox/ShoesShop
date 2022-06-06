@@ -8,6 +8,9 @@
 @import "components/small-blocks/validate";
 @import "components/small-blocks/mod-btn";
 @import "components/small-blocks/accordion-footer";
+@import "components/small-blocks/breadcrumbs";
+@import "components/small-blocks/range-slider";
+
 
 
 
@@ -15,6 +18,13 @@
 
 // Big blocks
 @import "components/big-blocks/header";
+@import "components/big-blocks/catalog-block";
+@import "components/big-blocks/lost";
+@import "components/big-blocks/news";
+
+
+
+
 @import "components/big-blocks/footer";
 
 

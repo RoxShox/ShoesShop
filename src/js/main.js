@@ -33,6 +33,13 @@ $('.slider-banner__items').slick({
 	nextArrow: document.querySelector('.slick-next'),
   });
 
+// slider-card
+
+$('.card-slider__inner').slick({
+	slidesToShow: 1,
+	arrows: false,
+	dots: true,
+});
 
 //   Counter
 

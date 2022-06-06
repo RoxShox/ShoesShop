@@ -195,6 +195,65 @@
 
     }
   }
+
+  & .basket {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-right: 35px;
+
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: $color-blue;
+      margin-right: 10px;
+    }
+
+    & .svg-wrap {
+      position: relative;
+
+      .count-basket {
+        position: absolute;
+        right: -7px;
+        bottom: 0;
+        width: 16px;
+        height: 16px;
+        background: $color-main;
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 12px;
+        letter-spacing: 0.005em;
+        color: #FFFFFF;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    svg {
+      position: relative;
+    }
+
+    .count-price {
+      position: absolute;
+      right: -14px;
+      bottom: 0;
+      background: #365BDF;
+      border-radius: 8px;
+      background: $color-main;
+      font-weight: 400;
+      font-size: 9px;
+      line-height: 12px;
+      letter-spacing: 0.005em;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2px 5px;
+    }
+  }
 }
 
 .btn-enter {
@@ -294,64 +353,7 @@
   }
 }
 
-.basket {
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding-right: 35px;
 
-  p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: $color-blue;
-    margin-right: 10px;
-  }
-
-  & .svg-wrap {
-    position: relative;
-
-    .count-basket {
-      position: absolute;
-      right: -7px;
-      bottom: 0;
-      width: 16px;
-      height: 16px;
-      background: $color-main;
-      font-weight: 400;
-      font-size: 9px;
-      line-height: 12px;
-      letter-spacing: 0.005em;
-      color: #FFFFFF;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  }
-
-  svg {
-    position: relative;
-  }
-
-  .count-price {
-    position: absolute;
-    right: -14px;
-    bottom: 0;
-    background: #365BDF;
-    border-radius: 8px;
-    background: $color-main;
-    font-weight: 400;
-    font-size: 9px;
-    line-height: 12px;
-    letter-spacing: 0.005em;
-    color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2px 5px;
-  }
-}
 
 #catalog {
   position: relative;

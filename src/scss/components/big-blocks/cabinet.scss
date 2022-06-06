@@ -1,0 +1,474 @@
+.cabinet{
+    padding: 63px 0 237px;
+	@include media-max( 1024) {
+		padding: 26px 0 100px;
+	}
+    &__title{
+        margin-bottom: 29px;
+    }
+    &__content{
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding:0 20px 0 53px;
+		@include media-max( 1350) {
+			padding:0 20px 0 20px;
+		}
+		@include media-max( 1024) {
+			justify-content: center;
+		}
+    }
+    &__edit-btn{
+        width: 235px;
+        height: 52px;
+        // background: #F9F9F9 ;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 26px 0 32px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+		z-index: 2;
+		@include media-max( 1024) {
+			left: 50%;
+			transform: translateX(-50%);
+			top: 267px;
+		}
+        span{
+            font-family: 'FrutigerNeue', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color: #555555;
+        }
+    }
+    &__edit-btn.edit{
+        background: #62BAAF;
+        border-radius: 4px;
+    }
+    &-form{
+        display: flex;
+		@include media-max( 1350) {
+			align-items: center;
+		}
+		@include media-max( 1024) {
+			flex-direction: column;
+			margin-top: 47px;
+		}
+    }
+    &-form__data {
+        display: grid;
+        grid-template-columns: repeat(2, 273px);
+        padding-left: 65px;
+        padding-top: 26px;
+        gap: 0 34px;
+		@include media-max( 1350) {
+			padding-left: 25px;
+			padding-top: 0;
+			grid-template-columns: repeat(1, 273px);
+		}
+		@include media-max( 1024) {
+			margin-top: 105px;
+		}
+        label{
+            display: flex;
+            flex-direction: column;
+			@include media-max( 1350) {
+				margin-bottom: 10px;
+				align-items: flex-start;
+			}
+            &:first-child{
+                grid-column: 1/3;
+				@include media-max( 1350) {
+					grid-column: 1/2;
+				}
+            }
+            span{
+                font-family: 'FrutigerNeue', sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                letter-spacing: 0.005em;
+                color: #555555;
+                margin-bottom: 13px;
+            }
+
+        }
+    }
+    &-form__input{
+        font-family: 'FrutigerNeue', sans-serif;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.005em;
+        color: #555555;
+        border-radius: 4px;
+        margin-left: -14px;
+        padding-left: 14px;
+        width: 273px;
+        height: 38px;    
+    }
+    &-form__input.edit{
+        background: #EDEDED;
+    }
+    &-form__input:disabled{
+        background: transparent;
+    }
+    &-form__input-file{
+        display: none;
+    }
+    
+    &-password{
+        max-width: 882px;
+        width: 100%;
+		@include media-max( 1024) {
+			margin-top: 60px;
+		}
+    }
+    &-password__input{
+        max-width: 882px;
+        width: 100%;
+        height: 64px;
+        padding: 0px 30px;
+        background: #F4F4F4;
+        border-radius: 7px;
+        font-style: normal;
+		&:focus{
+			border: 1px solid #62BAAF;
+		}
+        &:first-child{
+            margin-bottom: 9px;
+        }
+        &::placeholder{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 15px;
+    
+            color: #565656;
+        }
+    }
+    &-password__btn{
+        margin-top: 28px;
+        width: 232px;
+        height: 46px;
+		@include media-max( 1024) {
+			max-width: 353px;
+			width: 100%;
+			margin: 28px auto 0;
+			border-radius: 8px;
+			margin-top: 0px;
+		}
+    }
+    &__tours-items, &__guidebooks-items{
+        overflow-y: scroll;
+        height: 563px;
+        padding: 22px 20px 0px 39px;
+		@include media-max( 1200) {
+			padding: 22px 20px 0px 20px;
+		}
+		@include media-max( 500) {
+			padding: 0;
+		}
+    }
+	&__tours-item{
+		@include media-max( 700) {
+			flex-direction: column;
+		}
+	}
+    &__tours-item, &__guidebooks-item{
+        display: flex;
+    }
+    &__tours-item + &__tours-item{
+        margin-top: 20px;
+    }
+    &__guidebooks-item + &__guidebooks-item{
+        margin-top: 20px;
+    }
+	&__tours-photo{
+		@include media-max( 1250) {
+			max-width: 153px;
+		}
+		@include media-max( 700) {
+			display: none !important;
+		}
+		
+	}
+	.cabinet__tours {
+		@include media-max( 1024) {
+			margin-top: 47px;
+		}
+	}
+    &__tours-photo, &__guidebooks-photo{
+        position: relative;
+        border-radius: 3px 0px 0px 3px;
+        display: inline-block;
+        img{
+            height: 121px;
+			object-fit: cover;
+			border-radius: 3px 0px 0px 3px;
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+            border-radius: 0px;
+            transform: rotate(90deg);
+            right: 0px;
+            width: 121px;
+            height: 100%;
+            bottom: 0px;
+        }   
+    }
+	
+	
+	&__tours-content{
+		@include media-max( 700) {
+			display: none;
+		}
+	}
+    &__tours-content, &__guidebooks-content{
+        background: #FFFFFF;
+        box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.05);
+        border-radius: 0 3px 3px 0;
+        max-width: 700px;
+        width: 100%;
+		position: relative;
+        padding: 20px 14px 18px 0px;
+		@include media-max( 1024) {
+			max-width: 100%;
+		}
+		
+    }
+    &__tours-head, &__guidebooks-head{
+        border-bottom: 0.5px solid #E4E4E4;
+        padding-left: 28px;
+        display: flex;
+        padding-bottom: 7px;
+		@include media-max( 1150) {
+			// justify-content: space-between;
+		}
+		@include media-max( 1250) {
+			padding-left: 15px;
+		}
+    }
+    &__tours-head-eror{
+        color: #DE6464;
+    }
+    &__tours-head-finished{
+        color: #62BAAF;
+    }
+    &__tours-head-waiting{
+        font-weight: 400;
+    }
+    &__tours-head-title{
+        font-family: 'FrutigerNeue', sans-serif;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.005em;
+        color: #999999;
+        &:first-child{
+            width: 45%;
+			@include media-max( 700) {
+				width: 100%;
+			}
+			@include media-max( 700) {
+				margin-bottom: 18px;
+			}
+        }
+        &:nth-child(2){
+            width: 30%;
+			@include media-max( 1150) {
+				width: 20%;
+			}
+			@include media-max( 700) {
+				width: 100%;
+				margin-bottom: 8px;
+			}
+        }
+        &:nth-child(3){
+            width: 35%;
+			@include media-max( 1150) {
+				width: 30%;
+				white-space: nowrap;
+			}
+			@include media-max( 700) {
+				width: 100%;
+				margin-bottom: 8px;
+			}
+        }
+    }
+    &__tours-information, &__guidebooks-information{
+        display: flex;
+        padding-left: 28px;
+        align-items: center;
+        margin-top: 15px;
+		@include media-max( 1150) {
+			// justify-content: space-between;
+		}
+		@include media-max( 1200) {
+			padding-left: 15px;
+		}
+    }
+    &__tours-name{
+        font-family: 'FrutigerNeue', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0.005em;
+        color: #212121;
+        width: 45%;
+		@include media-max( 1150) {
+			font-size: 14px;
+		}
+		@include media-max( 700) {
+			width: 100%;
+			margin-bottom: 28px;
+			font-size: 16px;
+		}
+    }
+    &__tours-price{
+        font-family: 'FrutigerNeue', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 0.005em;
+        color: #212121;
+        width: 30%;
+		@include media-max( 1150) {
+			width: 20%;
+			font-size: 22px;
+		}
+		@include media-max( 700) {
+			width: 100%;
+			margin-bottom: 17px;
+		}
+    }
+    &__tours-link{
+        width: 192px;
+        height: 46px;
+        width: 35%;
+        background: #212121;
+		@include media-max( 1150) {
+			width: 30%;
+			text-align: center;
+		}
+		@include media-max( 1024) {
+			width: 35%;
+			
+		}
+		@include media-max( 700) {
+			width: 100%;
+		}
+        &:hover{
+            background: #62BAAF;
+            transition: .3s;
+        }
+    }
+    &__guidebooks-link{
+        background: #62BAAF;
+        border-radius: 3px;
+        font-family: 'FrutigerNeue',sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.005em;
+        color: #FFFFFF;
+        height: 46px;
+        width: 136px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+		@include media-max( 1200) {
+			width: 90px;
+		}
+        &:nth-child(2){
+            width: 226px;
+			@include media-max( 1200) {
+				width: 160px;
+			}
+        }
+    }
+    &__guidebooks-information{
+        justify-content: space-between;
+    }
+    &__guidebooks-links{
+        display: flex;
+        column-gap: 9px;
+    }
+    &__guidebooks-name{
+        font-family: 'FrutigerNeue', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: #212121;
+        max-width: 232px;
+		@include media-max( 1200) {
+			font-size: 14px;
+		}
+    }
+    
+}
+
+
+.input__wrapper{
+    background: #F8F8F8;
+    border-radius: 6px;
+    width: 263px;
+    height: 208px;
+    label{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        img{
+            margin-top: 30px;
+        }
+        span{
+            font-family: 'FrutigerNeue', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0.005em;
+            color: #FFFFFF;
+            width: 243px;
+            height: 38px;
+            background: #62BAAF;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 17px;
+            cursor: pointer;
+        }
+    }
+}
+
+.cabinet__tours-photo-mobile{
+	@include media-min( 700) {
+		display: none;
+	}
+	img{
+		width: 100%;
+	}
+}
+
+.cabinet__tours-content-mobile{
+	display: none;
+	background: #F9F9F9;
+	padding: 17px;
+	position: relative;
+	@include media-max( 700) {
+		display: block;
+	}
+}
+
+.cabinet__tours-mobile-head-title{
+	margin-bottom: 17px !important;
+}
+.cabinet__guidebooks-item{
+	@include media-max( 700) {
+		display: none;
+	}
+}

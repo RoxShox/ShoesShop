@@ -1,0 +1,210 @@
+.registry {
+	padding: 59px 0px 90px;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+
+	@include media-max(768) {
+		padding: 33px 0px 23px;
+	}
+
+	&__inner {
+		padding: 65px 0;
+		background: #FFFFFF;
+		border-radius: 15px;
+		filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.1))
+	}
+
+	&__title {
+		font-family: 'GothamPro', sans-serif;
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 23px;
+		text-align: center;
+		color: #000000;
+		margin-bottom: 16px;
+		@include media-max(768) {
+			font-size: 32px;
+		}
+
+		@include media-max(500) {
+			font-size: 24px;
+			margin-bottom: 14px;
+		}
+	}
+
+	&__subtitle {
+		text-align: center;
+		font-weight: 400;
+		font-size: 14px;
+		color: #000000;
+		margin-bottom: 27px;
+		font-family: 'GothamPro', sans-serif;
+		@include media-max(500) {
+			font-size: 12px;
+		}
+	}
+
+	&__form {
+		text-align: center;
+		margin: 0 auto;
+	}
+
+
+	&__input {
+		max-width: 882px;
+		width: 100%;
+		height: 62px;
+		background: #F4F4F4;
+		padding: 0px 34px;
+		margin-bottom: 19px;
+		font-weight: 400;
+		border: none;
+		font-size: 16px;
+		line-height: 15px;
+		border-radius: 7px;
+		color: #494949;
+		font-family: 'GothamPro', sans-serif;
+
+		@include media-max(600) {
+			margin-bottom: 9px;
+		}
+
+		&:focus {
+			border: 1px solid #365BDF;
+		}
+
+		&::placeholder {
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 15px;
+			color: #767676;
+			font-family: 'GothamPro', sans-serif;
+
+		}
+	}
+
+	&__input-сhange {
+		max-width: 521px;
+		width: 100%;
+
+		@include media-max(600) {
+			max-width: 100%;
+		}
+	}
+
+	&__input-checkbox {
+		max-width: 339px;
+		width: 100%;
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		clip: rect(0 0 0 0);
+	}
+
+	&__input-wrap {
+		display: flex;
+		justify-content: center;
+		column-gap: 20px;
+		position: relative;
+
+		@include media-max(600) {
+			flex-direction: column;
+			margin-bottom: 9px;
+		}
+	}
+
+	.registry__input-text {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 15px;
+		color: #767676;
+		padding-left: 15px;
+
+		@include media-max(600) {
+			padding-left: 82px;
+		}
+	}
+
+	.label__checkbox {
+		width: 339px;
+		height: 62px;
+		background: #F4F4F4;
+		border-radius: 8px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+
+		@include media-max(600) {
+			width: 100%;
+			justify-content: flex-start;
+		}
+	}
+
+	&__input-style {
+		width: 27px;
+		height: 27px;
+		border: 2px solid #D5D5D5;
+		border-radius: 3px;
+		position: absolute;
+		left: 22px;
+	}
+
+	&__input-checkbox:checked+.registry__input-style::before {
+		position: absolute;
+		content: '';
+		background-image: url(../img/checked-registration.png);
+		width: 33px;
+		height: 24px;
+		left: -5px;
+	}
+
+	&__descr {
+		font-family: 'FrutigerNeue', sans-serif;
+		font-weight: 400;
+		font-size: 10px;
+		line-height: 12px;
+		color: #303030;
+		margin-bottom: 76px;
+		margin-top: 12px;
+
+		@include media-max(600) {
+			max-width: 333px;
+			margin: 21px auto 32px;
+		}
+	}
+
+	&__btn {
+		margin: 0 auto;
+		max-width: 312px;
+		width: 100%;
+		height: 57px;
+		background: #365BDF;
+		border-radius: 8px;
+		margin-bottom: 24px;
+		font-size: 18px;
+		line-height: 114.2%;
+		color: #FFFFFF;
+		font-family: 'GothamPro', sans-serif;
+	}
+
+	&__enter {
+		font-weight: 400;
+		font-size: 14px;
+		text-align: center;
+		color: #000000;
+		font-family: 'GothamPro', sans-serif;
+		@include media-max(600) {
+			max-width: 223px;
+			margin: 0 auto 35px;
+		}
+
+		a {
+			color: #4AAAD7;
+			border-bottom: 0.5px solid #4AAAD7;
+		}
+	}
+
+}

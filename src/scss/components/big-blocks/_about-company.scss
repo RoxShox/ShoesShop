@@ -1,0 +1,31 @@
+.about-company {
+  padding-bottom: 200px;
+
+  &__title {
+    margin-top: 80px;
+    margin-bottom: 30px;
+    p{
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 110.3%;
+      letter-spacing: 0.005em;
+      text-transform: uppercase;
+      color: $color-main;
+    }
+  }
+
+  & .text {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 140.5%;
+    letter-spacing: 0.005em;
+    color: #0C0C0C;
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  & .social-items {
+    display: flex;
+    gap: 30px;
+  }
+}

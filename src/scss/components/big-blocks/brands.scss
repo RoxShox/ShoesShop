@@ -1,6 +1,10 @@
 .brands {
 	padding-bottom: 100px;
-
+	.brands__item-wrap {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 	&__title {
 		margin-bottom: 40px;
 	}
@@ -8,5 +12,14 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+	}
+	.slick-track {
+		position: relative;
+		top: 0;
+		left: 0;
+		margin-left: auto;
+		margin-right: auto;
+		display: flex;
+		align-items: center;
 	}
 }

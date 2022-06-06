@@ -1,16 +1,16 @@
-.title{
-	font-weight: 600;
-	font-size: 35px;
-	line-height: 43px;
-	color: #1D1D1F;
+.title {
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 31px;
+	letter-spacing: 0.005em;
+	color: #0C0C0C;
+	font-family: 'GothamPro', sans-serif;
 	@include media-max(768) {
-		margin: 0 auto;
-		font-size: 28px;
-		text-align: center;
-		line-height: 100%;
+
 	}
+
 	@include media-max(500) {
-		font-size: 20px;
+	
 	}
 }
 

@@ -50,7 +50,11 @@ ul {
 	list-style: none;
 	padding: 0;
 }
-
+.container-full{
+	width: 100%;
+	padding: 0px 29px;
+	margin: 0 auto;
+}
 .site-container {
 	position: relative;
 }
@@ -268,7 +272,6 @@ p {
 	width: 40px;
 	height: 40px;
 	margin-left: -20px;
-	margin-top: -20px;
 	margin-top: -20px;
 	border-radius: 50%;
 	border: 2px solid #f7941d;

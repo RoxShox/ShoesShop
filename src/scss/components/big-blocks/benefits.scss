@@ -1,0 +1,35 @@
+.benefits {
+	background: #F7F8F9;
+
+	&__items {
+		display: flex;
+		justify-content: space-between;
+		min-height: 222px;
+		align-items: center;
+	}
+
+	&__item {
+		display: flex;
+		column-gap: 31px;
+	}
+
+	&__picture {}
+
+	&__item-title {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 22px;
+		letter-spacing: 0.005em;
+		color: #303030;
+		margin-bottom: 7px;
+	}
+
+	&__item-descr {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		letter-spacing: 0.005em;
+		color: #555555;
+		max-width: 220px;
+	}
+}

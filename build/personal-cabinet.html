@@ -172,14 +172,8 @@
     <main>
         <section class="cabinet">
             <div class="container">
-                <h3 class="title cabinet__title">
-                    Основные данные
-                </h3>
                 <div class="tabs__inner">
                     <div class="tabs__left-box">
-                        <a class="tabs__logo" href="">
-                            <img src="img/tab-logo.svg" alt="">
-                        </a>
                         <div class="tabs__items">
                             <div class="tabs__item">Мои туры</div>
                             <div class="tabs__item">Сменить пароль</div>
@@ -188,11 +182,17 @@
                         </div>
                     </div>
                     <div class="tabs__content tabs__content-active">
+
                         <div class="cabinet__content">
-                            <button class="cabinet__edit-btn">
-                                <span>Редактировать</span>
-                                <img src="img/btn-edit-pencil.svg" alt="pencil">
-                            </button>
+                            <div class="cabinet__content-wrap">
+                                <h3 class="title cabinet__title">
+                                    Основные данные
+                                </h3>
+                                <button class="cabinet__edit-btn">
+                                    <span>Редактировать</span>
+                                    <img src="img/btn-edit-pencil.svg" alt="pencil">
+                                </button>
+                            </div>
                             <form class="cabinet-form">
                                 <div class="input__wrapper">
                                     <input id="cabinet-form__input-file" class="cabinet-form__input-file" type="file">
@@ -220,6 +220,11 @@
                     </div>
                     <div class="tabs__content">
                         <div class="cabinet__content">
+                            <div class="cabinet__content-wrap">
+                                <h3 class="title cabinet__title">
+                                    Основные данные
+                                </h3>
+                            </div>
                             <form class="cabinet-password">
                                 <label>
                                     <input class="cabinet-password__input" type="password" placeholder="Пароль">
@@ -234,319 +239,26 @@
                         </div>
                     </div>
                     <div class="tabs__content ">
-                        <div class="cabinet__tours ">
+                        <div class="cabinet__content ">
+                            <div class="cabinet__content-wrap">
+                                <h3 class="title cabinet__title">
+                                    Мои заказы
+                                </h3>
+                            </div>
                             <div class="cabinet__tours-items">
                                 <div class="cabinet__tours-item">
-                                    <div class="cabinet__tours-photo">
-                                        <img src="img/cabinet-tours-photo.png" alt="">
+                                    <div class="cabinet__tours-number">
+                                        Заказ <span>№ 834085</span>
                                     </div>
-                                    <div class="cabinet__tours-photo-mobile">
-                                        <img src="img/cabinet-tours-photo-mobile.png" alt="">
-                                    </div>
-                                    <div class="cabinet__tours-content">
-                                        <div class="cabinet__tours-head">
-                                            <div class="cabinet__tours-head-title">
-                                                Наименование:
-                                            </div>
-                                            <div class="cabinet__tours-head-title">
-                                                Стоимость:
-                                            </div>
-                                            <div class="cabinet__tours-head-title">
-                                                Статус <span class="cabinet__tours-head-waiting">состоится 25.04.2022</span>
-                                            </div>
+                                    <div class="cabinet__tours-status">
+                                        <div class="cabinet__tours-status-title">
+                                            Статус заказа:
                                         </div>
-                                        <div class="cabinet__tours-information">
-                                            <div class="cabinet__tours-name">
-                                                “Тур на двоих в Джилы су”
-                                            </div>
-                                            <div class="cabinet__tours-price">
-                                                46998 Р
-                                            </div>
-                                            <a class="btn cabinet__tours-link" href="">
-                                                Подробнее о туре
-                                            </a>
+                                        <div class="cabinet__tours-descr cabinet__tours-expect">
+                                            В пути
                                         </div>
                                     </div>
-                                    <div class="cabinet__tours-content-mobile">
-                                        <div class="cabinet__tours-head-title">
-                                            Статус <span class="cabinet__tours-head-waiting">состоится 25.04.2022</span>
-                                        </div>
-                                        <div class="cabinet__tours-head-title">
-                                            Наименование:
-                                        </div>
-                                        <div class="cabinet__tours-name">
-                                            “Тур на двоих в Джилы су”
-                                        </div>
-                                        <div class="cabinet__tours-head-title">
-                                            Стоимость:
-                                        </div>
-                                        <div class="cabinet__tours-price">
-                                            46998 Р
-                                        </div>
-                                        <a class="btn cabinet__tours-link" href="">
-                                            Подробнее о туре
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="cabinet__tours-item">
-                                    <div class="cabinet__tours-photo">
-                                        <img src="img/cabinet-tours-photo.png" alt="">
-                                    </div>
-                                    <div class="cabinet__tours-photo-mobile">
-                                        <img src="img/cabinet-tours-photo-mobile.png" alt="">
-                                    </div>
-                                    <div class="cabinet__tours-content">
-                                        <div class="cabinet__tours-head">
-                                            <div class="cabinet__tours-head-title">
-                                                Наименование:
-                                            </div>
-                                            <div class="cabinet__tours-head-title">
-                                                Стоимость:
-                                            </div>
-                                            <div class="cabinet__tours-head-title">
-                                                Статус <span class="cabinet__tours-head-finished">состоялся 25.04.2022</span>
-                                            </div>
-                                        </div>
-                                        <div class="cabinet__tours-information">
-                                            <div class="cabinet__tours-name">
-                                                “Тур на двоих в Джилы су”
-                                            </div>
-                                            <div class="cabinet__tours-price">
-                                                46998 Р
-                                            </div>
-                                            <a class="btn cabinet__tours-link" href="">
-                                                Подробнее о туре
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="cabinet__tours-content-mobile">
-                                        <div class="cabinet__tours-head-title">
-                                            Статус <span class="cabinet__tours-head-finished">состоялся 25.04.2022</span>
-                                        </div>
-                                        <div class="cabinet__tours-head-title">
-                                            Наименование:
-                                        </div>
-                                        <div class="cabinet__tours-name">
-                                            “Тур на двоих в Джилы су”
-                                        </div>
-                                        <div class="cabinet__tours-head-title">
-                                            Стоимость:
-                                        </div>
-                                        <div class="cabinet__tours-price">
-                                            46998 Р
-                                        </div>
-                                        <a class="btn cabinet__tours-link" href="">
-                                            Подробнее о туре
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="cabinet__tours-item">
-                                    <div class="cabinet__tours-photo">
-                                        <img src="img/cabinet-tours-photo.png" alt="">
-                                    </div>
-                                    <div class="cabinet__tours-photo-mobile">
-                                        <img src="img/cabinet-tours-photo-mobile.png" alt="">
-                                    </div>
-                                    <div class="cabinet__tours-content">
-                                        <div class="cabinet__tours-head">
-                                            <div class="cabinet__tours-head-title">
-                                                Наименование:
-                                            </div>
-                                            <div class="cabinet__tours-head-title">
-                                                Стоимость:
-                                            </div>
-                                            <div class="cabinet__tours-head-title">
-                                                Статус <span class="cabinet__tours-head-eror">отмена</span>
-                                            </div>
-                                        </div>
-                                        <div class="cabinet__tours-information">
-                                            <div class="cabinet__tours-name">
-                                                “Тур на двоих в Джилы су”
-                                            </div>
-                                            <div class="cabinet__tours-price">
-                                                46998 Р
-                                            </div>
-                                            <a class="btn cabinet__tours-link" href="">
-                                                Подробнее о туре
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="cabinet__tours-content-mobile">
-                                        <div class="cabinet__tours-head-title">
-                                            Статус <span class="cabinet__tours-head-eror">отмена</span>
-                                        </div>
-                                        <div class="cabinet__tours-head-title">
-                                            Наименование:
-                                        </div>
-                                        <div class="cabinet__tours-name">
-                                            “Тур на двоих в Джилы су”
-                                        </div>
-                                        <div class="cabinet__tours-head-title">
-                                            Стоимость:
-                                        </div>
-                                        <div class="cabinet__tours-price">
-                                            46998 Р
-                                        </div>
-                                        <a class="btn cabinet__tours-link" href="">
-                                            Подробнее о туре
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="cabinet__tours-item">
-                                    <div class="cabinet__tours-photo">
-                                        <img src="img/cabinet-tours-photo.png" alt="">
-                                    </div>
-                                    <div class="cabinet__tours-photo-mobile">
-                                        <img src="img/cabinet-tours-photo-mobile.png" alt="">
-                                    </div>
-                                    <div class="cabinet__tours-content">
-                                        <div class="cabinet__tours-head">
-                                            <div class="cabinet__tours-head-title">
-                                                Наименование:
-                                            </div>
-                                            <div class="cabinet__tours-head-title">
-                                                Стоимость:
-                                            </div>
-                                            <div class="cabinet__tours-head-title">
-                                                Статус <span>состоялся 25.04.2022</span>
-                                            </div>
-                                        </div>
-                                        <div class="cabinet__tours-information">
-                                            <div class="cabinet__tours-name">
-                                                “Тур на двоих в Джилы су”
-                                            </div>
-                                            <div class="cabinet__tours-price">
-                                                46998 Р
-                                            </div>
-                                            <a class="btn cabinet__tours-link" href="">
-                                                Подробнее о туре
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="cabinet__tours-content-mobile">
-                                        <div class="cabinet__tours-head-title">
-                                            Статус <span>состоялся 25.04.2022</span>
-                                        </div>
-                                        <div class="cabinet__tours-head-title">
-                                            Наименование:
-                                        </div>
-                                        <div class="cabinet__tours-name">
-                                            “Тур на двоих в Джилы су”
-                                        </div>
-                                        <div class="cabinet__tours-head-title">
-                                            Стоимость:
-                                        </div>
-                                        <div class="cabinet__tours-price">
-                                            46998 Р
-                                        </div>
-                                        <a class="btn cabinet__tours-link" href="">
-                                            Подробнее о туре
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="cabinet__tours-item">
-                                    <div class="cabinet__tours-photo">
-                                        <img src="img/cabinet-tours-photo.png" alt="">
-                                    </div>
-                                    <div class="cabinet__tours-photo-mobile">
-                                        <img src="img/cabinet-tours-photo-mobile.png" alt="">
-                                    </div>
-                                    <div class="cabinet__tours-content">
-                                        <div class="cabinet__tours-head">
-                                            <div class="cabinet__tours-head-title">
-                                                Наименование:
-                                            </div>
-                                            <div class="cabinet__tours-head-title">
-                                                Стоимость:
-                                            </div>
-                                            <div class="cabinet__tours-head-title">
-                                                Статус <span>состоялся 25.04.2022</span>
-                                            </div>
-                                        </div>
-                                        <div class="cabinet__tours-information">
-                                            <div class="cabinet__tours-name">
-                                                “Тур на двоих в Джилы су”
-                                            </div>
-                                            <div class="cabinet__tours-price">
-                                                46998 Р
-                                            </div>
-                                            <a class="btn cabinet__tours-link" href="">
-                                                Подробнее о туре
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="cabinet__tours-content-mobile">
-                                        <div class="cabinet__tours-head-title">
-                                            Статус <span>состоялся 25.04.2022</span>
-                                        </div>
-                                        <div class="cabinet__tours-head-title">
-                                            Наименование:
-                                        </div>
-                                        <div class="cabinet__tours-name">
-                                            “Тур на двоих в Джилы су”
-                                        </div>
-                                        <div class="cabinet__tours-head-title">
-                                            Стоимость:
-                                        </div>
-                                        <div class="cabinet__tours-price">
-                                            46998 Р
-                                        </div>
-                                        <a class="btn cabinet__tours-link" href="">
-                                            Подробнее о туре
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="cabinet__tours-item">
-                                    <div class="cabinet__tours-photo">
-                                        <img src="img/cabinet-tours-photo.png" alt="">
-                                    </div>
-                                    <div class="cabinet__tours-photo-mobile">
-                                        <img src="img/cabinet-tours-photo-mobile.png" alt="">
-                                    </div>
-                                    <div class="cabinet__tours-content">
-                                        <div class="cabinet__tours-head">
-                                            <div class="cabinet__tours-head-title">
-                                                Наименование:
-                                            </div>
-                                            <div class="cabinet__tours-head-title">
-                                                Стоимость:
-                                            </div>
-                                            <div class="cabinet__tours-head-title">
-                                                Статус <span>состоялся 25.04.2022</span>
-                                            </div>
-                                        </div>
-                                        <div class="cabinet__tours-information">
-                                            <div class="cabinet__tours-name">
-                                                “Тур на двоих в Джилы су”
-                                            </div>
-                                            <div class="cabinet__tours-price">
-                                                46998 Р
-                                            </div>
-                                            <a class="btn cabinet__tours-link" href="">
-                                                Подробнее о туре
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="cabinet__tours-content-mobile">
-                                        <div class="cabinet__tours-head-title">
-                                            Статус <span>состоялся 25.04.2022</span>
-                                        </div>
-                                        <div class="cabinet__tours-head-title">
-                                            Наименование:
-                                        </div>
-                                        <div class="cabinet__tours-name">
-                                            “Тур на двоих в Джилы су”
-                                        </div>
-                                        <div class="cabinet__tours-head-title">
-                                            Стоимость:
-                                        </div>
-                                        <div class="cabinet__tours-price">
-                                            46998 Р
-                                        </div>
-                                        <a class="btn cabinet__tours-link" href="">
-                                            Подробнее о туре
-                                        </a>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>

@@ -96,13 +96,14 @@ try {
 // call counter
 
 const stockBtn = document.querySelectorAll('.stock__item-btn-box')
-const stockCount = document.querySelectorAll('.counter')
+const stockWrap = document.querySelectorAll('.stock__item-price')
 
 	  stockBtn.forEach(btn=> {
 		  btn.addEventListener('click', () =>{
-			  stockCount.forEach(count => {
-				count.classList.toggle('show')
-			  })
+			stockWrap.forEach((item, e) => {
+				let target = e.target
+				target.classList.toggle('show')
+			})
 		  })
 	  })
 

@@ -7,33 +7,41 @@
 [type="radio"]:not(:checked) + label
 {
   position: relative;
-  padding-left: 28px;
+  padding-left: 38px;
   cursor: pointer;
-  line-height: 20px;
   display: inline-block;
-  color: #666;
+  font-family: 'Roboto',sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 19.1742px;
+  line-height: 22px;
+
+  color: #000000;
+
 }
 [type="radio"]:checked + label:before,
 [type="radio"]:not(:checked) + label:before {
   content: '';
   position: absolute;
   left: 0;
-  top: 0;
-  width: 18px;
-  height: 18px;
-  border: 1px solid #ddd;
+  top: -4px;
   border-radius: 100%;
   background: #fff;
+  width: 24.93px;
+  height: 24.93px;
+
+
+  background: #EFEFEF;
 }
 [type="radio"]:checked + label:after,
 [type="radio"]:not(:checked) + label:after {
   content: '';
-  width: 12px;
-  height: 12px;
-  background: #F87DA9;
+  width: 19.17px;
+  height: 19.17px;
+  background: #E23F3F;
   position: absolute;
-  top: 4px;
-  left: 4px;
+  top: -0.88px;
+  left: 2.88px;
   border-radius: 100%;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;

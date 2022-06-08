@@ -96,13 +96,14 @@ try {
 // call counter
 
 const stockBtn = document.querySelectorAll('.stock__item-btn-box')
-const stockCount = document.querySelectorAll('.counter')
+const stockWrap = document.querySelectorAll('.stock__item-price')
 
 	  stockBtn.forEach(btn=> {
 		  btn.addEventListener('click', () =>{
-			  stockCount.forEach(count => {
-				count.classList.toggle('show')
-			  })
+			stockWrap.forEach((item, e) => {
+				let target = e.target
+				target.classList.toggle('show')
+			})
 		  })
 	  })
 
@@ -174,14 +175,6 @@ $('.tabs__item').click(function () {
 }).eq(0).addClass('tabs__item-active');
 
 
-
-
-
-
-
-
-
-
 try{
 	$(".custom-select").each(function() {
 		var classes = $(this).attr("class"),
@@ -222,3 +215,22 @@ try{
 catch {
 	
 }
+
+
+let inputWrapInput = document.querySelectorAll(".input-wrapper input");
+let inputWrap = document.querySelectorAll(".input-wrapper");
+let inputWrapLabel = document.querySelectorAll(".input-wrapper label");
+
+inputWrapInput.forEach((item) => {
+	item.addEventListener('change', function () {
+		if(item.value === '') {
+			item.closest('div').classList.add('active')
+			console.log(item.value)
+		}
+		// else {
+		// 	item.closest('div').classList.remove('active')
+		// }
+	})
+
+})
+

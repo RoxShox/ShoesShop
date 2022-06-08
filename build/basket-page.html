@@ -138,14 +138,11 @@
                                 <path d="M11.5 6.38298C11.5 7.16126 11.1589 8.37505 10.5967 9.81612C10.0425 11.2368 9.30042 12.8127 8.55389 14.2877C7.80811 15.7611 7.06178 17.1261 6.50159 18.1232C6.31 18.4642 6.1403 18.7619 6 19.006C5.8597 18.7619 5.69 18.4642 5.49841 18.1232C4.93822 17.1261 4.19189 15.7611 3.44611 14.2877C2.69958 12.8127 1.95754 11.2368 1.40331 9.81612C0.84111 8.37505 0.5 7.16126 0.5 6.38298C0.5 3.1043 2.99113 0.5 6 0.5C9.00887 0.5 11.5 3.1043 11.5 6.38298Z" stroke="#3A3A3A" />
                                 <circle cx="6" cy="6" r="3.5" stroke="#3A3A3A" />
                             </svg>
-                            <select name="sources" id="sources" class="custom-select sources" placeholder="Source Type">
+                            <select name="sources" id="sources" class="custom-select sources" placeholder="Москва">
                                 <option value="moscow">Москва</option>
                                 <option value="Piter">Питер</option>
                                 <option value="Rostov" selection>Ростов</option>
                             </select>
-                            <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4.35355 0.646447C4.15829 0.451185 3.84171 0.451185 3.64645 0.646447L0.464466 3.82843C0.269204 4.02369 0.269204 4.34027 0.464466 4.53553C0.659728 4.7308 0.976311 4.7308 1.17157 4.53553L4 1.70711L6.82843 4.53553C7.02369 4.7308 7.34027 4.7308 7.53553 4.53553C7.7308 4.34027 7.7308 4.02369 7.53553 3.82843L4.35355 0.646447ZM4.5 2L4.5 1L3.5 1L3.5 2L4.5 2Z" fill="#3A3A3A" />
-                            </svg>
                         </div>
                         <a class="favorites">
                             <p>Избранное</p>
@@ -155,7 +152,7 @@
                             </svg>
 
                         </a>
-                        <a class="basket">
+                        <a href="basket-page.html" class="basket">
                             <p>Корзина</p>
                             <div class="svg-wrap">
                                 <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -479,78 +476,148 @@
         <setion class="order">
             <div class="container order-container">
                 <form id="order-form" action="">
-                    <div class="order-clearance">
-                        <div class="order-title">
-                            <p>Оформление заказа</p>
-                        </div>
-                        <label>
-                            <input type="text" placeholder="Ф.И.О">
-                        </label>
-                        <p class="double-input">
-                            <label>
-                                <input type="text" name="tel" placeholder="Телефон">
-                            </label>
-                            <label>
-                                <input type="text" placeholder="Email">
-                            </label>
-                        </p>
-                        <textarea name="" id="" cols="30" rows="1" placeholder="Комментарий"></textarea>
+                    <div class="flex">
+                        <div class="order-clearance">
+                            <div class="order-title">
+                                <p>Оформление заказа</p>
+                            </div>
+                            <div class="input-wrapper">
+                                <input type="text" id="FIO" required value>
+                                <label for="FIO"><span>Ф.И.О</span></label>
+                            </div>
+                            <div class="double-input">
+                                <div class="input-wrapper">
+                                    <input type="text" id="tel" required>
+                                    <label for="tel"><span>Телефон</span><span>*</span></label>
+                                </div>
+                                <div class="input-wrapper">
+                                    <input type="text" id="Email" required>
+                                    <label for="Email"><span>Email</span><span>*</span></label>
+                                </div>
+                            </div>
 
-                        <div class="order-title">
-                            <p>Адрес</p>
+                            <textarea name="" id="" cols="30" rows="1" placeholder="Комментарий"></textarea>
+
+                            <div class="order-title margin">
+                                <p>Адрес</p>
+                            </div>
+                            <div class="input-wrapper">
+                                <input type="text" id="adress" required>
+                                <label for="adress"><span>Адрес</span><span>*</span></label>
+                            </div>
+                            <div class="input-wrapper">
+                                <input type="text" id="city" required>
+                                <label for="city"><span>Город</span><span>*</span></label>
+                            </div>
+                            <div class="input-wrapper">
+                                <input type="text" id="street" required>
+                                <label for="street"><span>Улица</span><span>*</span></label>
+                            </div>
+                            <div class="four-input">
+                                <div class="input-wrapper">
+                                    <input type="text" id="house" required>
+                                    <label for="house"><span>Дом</span><span>*</span></label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="checkbox" id="house-single">
+                                    <label for="house-single">Частный дом</label>
+                                </div>
+                                <div class="input-wrapper">
+                                    <input type="text" id="corpus">
+                                    <label for="corpus"><span>Корпус</span></label>
+                                </div>
+                                <div class="input-wrapper">
+                                    <input type="text" id="pod">
+                                    <label for="pod"><span>Подъезд</span></label>
+                                </div>
+                            </div>
+
+                            <div class="triple-input">
+                                <div class="input-wrapper">
+                                    <input type="text" id="floor" required>
+                                    <label for="floor"><span>Этаж</span><span>*</span></label>
+                                </div>
+                                <div class="input-wrapper">
+                                    <input type="text" id="tenant" required>
+                                    <label for="tenant"><span>Квартира</span><span>*</span></label>
+                                </div>
+                                <div class="input-wrapper">
+                                    <input type="text" id="intercom" required>
+                                    <label for="intercom"><span>Домофон</span><span>*</span></label>
+                                </div>
+                            </div>
+
+
+                            <div class="flex margin">
+                                <div class="order-title">
+                                    <p>Способ оплаты</p>
+                                </div>
+
+                                <p>
+                                    <input type="radio" id="pay-online" name="radio-pay" checked>
+                                    <label for="pay-online">Оплата онлайн</label>
+                                </p>
+                                <p>
+                                    <input type="radio" id="pay-live" name="radio-pay">
+                                    <label for="pay-live">Оплата наличными</label>
+                                </p>
+                            </div>
                         </div>
-                        <label>
-                            <input type="text" placeholder="Адрес">
-                        </label>
-                        <label>
-                            <input type="text" placeholder=Город">
-                        </label>
-                        <label>
-                            <input type="text" placeholder="Улица">
-                        </label>
-                        <p class="four-input">
-                            <label>
-                                <input type="text" placeholder="Ф.И.О">
-                            </label>
-                            <label>
-                                <input type="text" placeholder="Корпус">
-                            </label>
-                            <label>
-                                <input type="text" placeholder="Подъезд">
-                            </label>
-                        </p>
-                        <p class="triple-input">
-                            <label>
-                                <input type="text" placeholder="Этаж">
-                            </label>
-                            <label>
-                                <input type="text" placeholder="Квартира">
-                            </label>
-                            <label>
-                                <input type="text" placeholder="Домофон">
-                            </label>
-                        </p>
+                        <div class="order-delivery">
+                            <div class="order-title">
+                                <p>Доставка</p>
+                            </div>
+                            <p>
+                                <input type="radio" id="entrance" name="radio-group" checked>
+                                <label for="entrance">Доставка до подъезда</label>
+                            </p>
+                            <p>
+                                <input type="radio" id="flat" name="radio-group">
+                                <label for="flat">Доставка до квартиры</label>
+                            </p>
+                            <p>
+                                <input type="radio" id="another_city" name="radio-group">
+                                <label for="another_city">Доставка в другой город</label>
+                            </p>
+                            <p>
+                                <input type="radio" id="samovizov" name="radio-group">
+                                <label for="samovizov">Самовывоз</label>
+                            </p>
+                            <div class="form-group">
+                                <input type="checkbox" id="delivery">
+                                <label for="delivery">Срочная доставка</label>
+                            </div>
+
+                            <div class="input-wrapper date">
+                                <label><span>Выбрать дату доставки</span><span>*</span></label>
+                                <input type="date" id="date-del" required>
+                            </div>
+
+                            <div class="order-time">
+                                <select name="sources" id="sources" class="custom-select sources" placeholder="Выбрать время доставки*">
+                                    <option value="13">13:00</option>
+                                    <option value="14">14:00</option>
+                                    <option value="15" selection>15:00</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
-                    <div class="order-delivery">
-                        <div class="order-title">
-                            <p>Доставка</p>
+                    <div class="order-total">
+                        <div class="order-total__items">
+                            <div class="order-total__item">
+                                <p>Доставка:</p>
+                                <p>649 руб.</p>
+                            </div>
+                            <div class="order-total__item">
+                                <p>Стоимость товаров:</p>
+                                <p>5347 руб.</p>
+                            </div>
+                            <div class="order-total__item">
+                                <p>Итого:</p>
+                                <p>6998 руб.</p>
+                            </div>
                         </div>
-                        <p>
-                            <input type="radio" id="entrance" name="radio-group" checked>
-                            <label for="entrance">Доставка до подъезда</label>
-                        </p>
-                        <p>
-                            <input type="radio" id="flat" name="radio-group">
-                            <label for="flat">Доставка до квартиры</label>
-                        </p>
-                        <p>
-                            <input type="radio" id="another_city" name="radio-group">
-                            <label for="another_city">Доставка в другой город</label>
-                        </p>
-                        <p>
-                            <input type="radio" id="samovizov" name="radio-group">
-                            <label for="samovizov">Самовывоз</label>
-                        </p>
+                        <button class="btn">Сделать заказ</button>
                     </div>
                 </form>
 

@@ -13,7 +13,8 @@
 
 	&__items {
 		display: flex;
-		align-items: center;
+		flex-wrap: wrap;
+		width: 100%;
 	}
 
 
@@ -115,13 +116,13 @@
 		justify-content: center;
 	}
 	
-	.stock__item-favorites.stock__item-favorites--active{
-		background-image: url(../img/stock-favorites-active.svg);
-		background-repeat: no-repeat;
-	}
+	
 
 }
-
+.stock__item-favorites.stock__item-favorites--active{
+	background-image: url(../img/stock-favorites-active.svg);
+	background-repeat: no-repeat;
+}
 .back-link {
 	display: flex;
 	align-items: center;

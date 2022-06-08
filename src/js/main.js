@@ -94,10 +94,10 @@ const stockBtn = document.querySelectorAll('.stock__item-btn-box')
 const stockWrap = document.querySelectorAll('.stock__item-price')
 
 	  stockBtn.forEach(btn=> {
-		  btn.addEventListener('click', () =>{
+		  btn.addEventListener('click', (e) =>{
 			stockWrap.forEach((item, e) => {
 				let target = e.target
-				target.classList.toggle('show')
+				item.classList.toggle('show')
 			})
 		  })
 	  })

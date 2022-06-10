@@ -136,3 +136,13 @@
 		color: #152F34;
 	}
 }
+.stock__item-price.show {
+	height: 46px;
+}
+.stock__item-price.show button.stock__item-btn-box {
+	display: none;
+}
+
+.stock__item-price.show .counter {
+	display: flex;
+}

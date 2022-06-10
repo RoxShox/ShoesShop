@@ -27,13 +27,13 @@
 }
 .custom-select-trigger:after {
   position: absolute;
-  display: block;
-  content: '';
-  width: 10px; height: 10px;
-  top: 50%; right: 25px;
-  margin-top: -3px;
-  border-bottom: 1px solid #3A3A3A;
-  border-right: 1px solid #3A3A3A;
+  content: "";
+  width: 6px;
+  height: 6px;
+  top: 50%;
+  right: 25px;
+  border-bottom: 1px solid #393939;
+  border-right: 1px solid #393939;
   transform: rotate(45deg) translateY(-50%);
   transition: all .4s ease-in-out;
   transform-origin: 50% 0;
@@ -113,8 +113,6 @@
 }
 
 span.custom-select-trigger {
-  font-family: 'Frutiger Neue LT W1G', sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;

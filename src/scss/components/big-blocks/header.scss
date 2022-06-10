@@ -220,7 +220,7 @@
         width: 16px;
         height: 16px;
         background: $color-main;
-        font-weight: 400;
+        font-weight: 300;
         font-size: 9px;
         line-height: 12px;
         letter-spacing: 0.005em;
@@ -238,12 +238,12 @@
 
     .count-price {
       position: absolute;
+      font-weight: 300;
       right: -14px;
       bottom: 0;
       background: #365BDF;
       border-radius: 8px;
       background: $color-main;
-      font-weight: 400;
       font-size: 9px;
       line-height: 12px;
       letter-spacing: 0.005em;
@@ -280,6 +280,13 @@
   height: 46px;
   background: #FFFFFF;
   border-radius: 3px;
+  color: $color-blue;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.005em;
+  font-weight: 500;
+
+
 
   &:hover {
     background: $color-blue;

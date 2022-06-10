@@ -124,7 +124,13 @@ ul {
 .js-focus-visible :focus:not(.focus-visible) {
 	outline: none;
 }
-
+.page{
+	background-color: gray;
+	text-align: center;
+	li{
+		margin-bottom: 30px;
+	}
+}
 .container {
 	padding: 0 20px;
 	margin: 0 auto;

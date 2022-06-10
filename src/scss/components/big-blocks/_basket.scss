@@ -1,0 +1,135 @@
+.basket {
+
+  &-section {
+    padding-bottom: 70px;
+  }
+
+  & .title-page {
+    p {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 29px;
+      letter-spacing: 0.005em;
+      color: #0C0C0C;
+    }
+  }
+
+  &-item {
+    min-height: 120px;
+    width: 100%;
+    max-width: 1322px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    margin-bottom: 17px;
+
+    &__wrap {
+      display: flex;
+      padding: 20px 20px 10px 32px;
+    }
+
+    &__content {
+      position: relative;
+      display: flex;
+      width: 100%;
+    }
+
+    & .close {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 70px;
+      padding-bottom: 10px;
+
+      svg {
+        cursor: pointer;
+      }
+    }
+
+    & .img-wrap {
+      max-width: 94px;
+      min-width: 94px;
+      width: 100%;
+      height: 94px;
+      overflow: hidden;
+      margin-right: 90px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    & .line {
+      position: absolute;
+      border: 0.5px solid #E4E4E4;
+      top: 20px;
+      left: 0;
+      width: 100%;
+      opacity: 0.5;
+    }
+
+    &__title {
+      margin-bottom: 25px;
+
+      p {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.005em;
+        color: #999999;
+      }
+    }
+
+    &__text {
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.005em;
+        color: #0C0C0C;
+      }
+
+      &.big-text {
+        p {
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 29px;
+          letter-spacing: 0.005em;
+          color: #0C0C0C;
+        }
+      }
+    }
+
+    &__text-gray {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.005em;
+      color: #555555;
+    }
+  }
+
+  & .block-name {
+    max-width: 240px;
+    width: 100%;
+    margin-right: 70px;
+  }
+  & .block-articul {
+    max-width: 90px;
+    width: 100%;
+    margin-right: 120px;
+  }
+  & .block-count {
+    max-width: 130px;
+    width: 100%;
+    margin-right: 60px;
+  }
+  & .block-price-single {
+    max-width: 110px;
+    width: 100%;
+    margin-right: 40px;
+  }
+}
+

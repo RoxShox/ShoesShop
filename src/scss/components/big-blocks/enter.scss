@@ -99,7 +99,7 @@
 
 	&__btn {
 		margin-bottom: 50px !important;
-
+		font-weight: 500;
 		@include media-max(600) {
 			margin-bottom: 29px;
 		}

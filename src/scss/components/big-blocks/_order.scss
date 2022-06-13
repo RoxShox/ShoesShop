@@ -14,7 +14,27 @@
     }
 
   }
-
+  .input__date{
+	max-width: 314px;
+	width: 100%;
+	color: #9D9D9D;
+	margin-bottom: 0;
+  }
+  .input-wrapper__label{
+	position: relative;
+	max-width: 314px;
+	width: 100%;
+	left: 0;
+	&::before{
+		position: absolute;
+		content: '';
+		background-image: url(../img/date-picture.svg);
+		width: 22px;
+		height: 22px;
+		right: 6px;
+		bottom: 0;
+	}
+  }
   & .flex:first-child {
     width: 100%;
     gap: 65px;
@@ -220,7 +240,7 @@
     border: none;
     outline: none;
     border-bottom: 0.958712px solid #CECECE;
-    padding: 15px 15px 10px 15px;
+    padding: 15px 15px 10px 22px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -306,6 +326,7 @@
 
 .input-wrapper.date {
   margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 input#date-del {

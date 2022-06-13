@@ -231,3 +231,30 @@ inputWrapInput.forEach((item) => {
 
 })
 
+
+// datepicker
+
+$(function () {
+	$("#datepicker-8").datepicker({
+		selectOtherMonths: false,
+		dateFormat: "dd.mm.yy",
+		dayNamesMin: ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
+		firstDay: 1,
+		monthNames: ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"],
+		// redShowDay: function (date) {
+		// 	var dayOfWeek = date.getDay();
+		// 	// 0 : Sunday, 1 : Monday, ...
+		// 	if (dayOfWeek == 0 || dayOfWeek == 6) return dayOfWeek.css("color", "red");
+		// 	else return [true];
+		// }
+		beforeShow: function (input, inst) {
+			setTimeout(function () {
+				inst.dpDiv.css({
+					top: $("#datepicker-8").offset().top + 60,
+					left: $("#datepicker-8").offset().left - 38,
+				});
+			}, 0);
+		}
+	});
+});
+

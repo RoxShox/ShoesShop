@@ -116,20 +116,49 @@
     width: 100%;
     margin-right: 70px;
   }
+
   & .block-articul {
     max-width: 90px;
     width: 100%;
     margin-right: 120px;
   }
+
   & .block-count {
     max-width: 130px;
     width: 100%;
     margin-right: 60px;
   }
+
   & .block-price-single {
     max-width: 110px;
     width: 100%;
     margin-right: 40px;
+  }
+
+  & .counter-basket {
+    display: flex;
+    position: relative;
+
+    & .decrease-button, {
+      background: transparent !important;
+    }
+
+    & input[type=number] {
+      background: transparent;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 29px;
+      letter-spacing: 0.005em;
+      color: #555555;
+    }
+
+    & .increase-button {
+      background: transparent !important;
+
+      svg {
+        transform: rotate(180deg);
+      }
+    }
   }
 }
 

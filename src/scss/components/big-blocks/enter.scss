@@ -12,6 +12,7 @@
 		filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.1));
 		background: #FFFFFF;
 		border-radius: 15px;
+		min-height: 540px;
 	}
 
 	&__decor {
@@ -124,5 +125,9 @@
 				border-bottom: 0.5px solid #62BAAF;
 			}
 		}
+	}
+	& button.btn.registry__btn.enter__btn {
+		margin-top: 25px;
+		margin-bottom: 50px;
 	}
 }

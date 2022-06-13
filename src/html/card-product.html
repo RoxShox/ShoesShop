@@ -23,6 +23,7 @@
 
 @include("chunk/header.html")
 <main>
+    <div class="card-product-page">
     <div class="container">
         <div class="breadcrumbs">
             <svg width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -37,8 +38,9 @@
         </div>
     </div>
     @include("chunk/card-product__block.html")
-    @include("chunk/brands.html")
     @include("chunk/recomondation.html")
+    @include("chunk/brands.html")
+    </div>
 </main>
 @include("chunk/footer.html")
 

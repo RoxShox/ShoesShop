@@ -52,7 +52,7 @@
 		span {
 			font-family: 'FrutigerNeue', sans-serif;
 			font-style: normal;
-			font-weight: 400;
+			font-weight: 500;
 			font-size: 18px;
 			line-height: 22px;
 			color: #555555;
@@ -136,6 +136,7 @@
 		padding-left: 14px;
 		width: 273px;
 		height: 38px;
+		font-weight: 500;
 	}
 
 	&-form__input.edit {
@@ -293,6 +294,7 @@
 
 	.cabinet__tours-link {
 		max-width: 196px;
+		font-weight: 500;
 		width: 100%;
 		height: 46px;
 		background: #365BDF;
@@ -300,7 +302,6 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		font-weight: 400;
 		font-size: 14px;
 		line-height: 17px;
 		letter-spacing: 0.005em;
@@ -333,7 +334,7 @@
 
 		span {
 			font-family: 'FrutigerNeue', sans-serif;
-			font-weight: 400;
+			font-weight: 500;
 			font-size: 14px;
 			line-height: 17px;
 			letter-spacing: 0.005em;

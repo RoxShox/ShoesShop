@@ -69,7 +69,7 @@ try {
                 value++;
                 break;
         }
-        if(value === 0) {
+        if (value === 0) {
             input.closest('.stock__item-price.show').classList.remove('show')
         }
 
@@ -231,3 +231,13 @@ inputWrapInput.forEach((item) => {
 
 })
 
+
+
+
+let ulFilterLi = document.querySelectorAll('.filter-item ul li');
+
+ulFilterLi.forEach((item) => {
+    item.addEventListener('click', function () {
+        item.classList.add('active')
+    })
+})

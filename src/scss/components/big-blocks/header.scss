@@ -73,6 +73,7 @@
 
 
     &-list {
+      transition: all .3s;
       ul {
         display: flex;
         align-items: center;
@@ -104,13 +105,16 @@
 
     &-wrap {
       margin-right: 120px;
+      transition: all .3s;
 
       &:hover {
         svg {
           transform: rotate(180deg);
+          transition: all .3s;
         }
 
         & .header-catalog-items {
+          transition: all .3s;
           display: flex;
         }
       }
@@ -131,6 +135,7 @@
       top: 0;
       border-top: 5px solid #f3f3f3;
       flex-direction: column;
+      transition: all .3s;
 
       & .block {
         width: 300px;
